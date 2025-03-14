@@ -1,0 +1,15 @@
+version: 2
+
+sources:
+
+  - name: sumup
+    schema: sumup
+    database: postgres
+  
+    tables:
+      - name: device
+        description: Sumup devices and the stores that hold their device
+      - name: store
+        description: Stores and their detailed information
+      - name: transaction
+        desription: Transactions made by Sumup devices

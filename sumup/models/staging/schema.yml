@@ -1,0 +1,125 @@
+version: 2
+
+models:
+  - name: stg_device
+    description: "Sumup devices and the stores that hold their device"
+    columns:
+      - name: device_id
+        data_type: integer
+        description: "Sumup hardware unique device ID to perform transaction - primary key"
+        tests:
+          - unique
+          - not_null
+
+      - name: type
+        data_type: integer
+        description: "Device Type numerical"
+        tests:
+          - not_null
+
+      - name: store_id
+        data_type: integer
+        description: "Store ID numerical"
+        tests:
+          - not_null
+  - name: stg_store
+    description: "Stores and their detailed information"
+    columns:
+      - name: store_id
+        data_type: integer
+        description: "Store ID that uniqely identifies the store where the device is used"
+        tests:
+          - unique
+          - not_null
+
+      - name: store_name
+        data_type: text
+        description: "Name of the store"
+        tests:
+          - not_null
+
+      - name: address
+        data_type: text
+        description: "Address (Street and House Nr) of the store"
+        tests:
+          - not_null
+
+      - name: city
+        data_type: text
+        description: "City where the store is located"
+        tests:
+          - not_null
+
+      - name: country
+        data_type: text
+        description: "Country where the store is located"
+        tests:
+          - not_null
+
+      - name: store_created_at
+        data_type: text
+        description: "Store creation timestamp in Sumups systems"
+        tests:
+          - not_null
+
+      - name: typology
+        data_type: text
+        description: "The type of business the store runs (Eg Hotel, Beuaty, Restaurant, etc.)"
+        tests:
+          - not_null
+
+      - name: customer_id
+        data_type: integer
+        description: "Sumup Customer Id that the store belongs to"
+        tests:
+          - not_null
+
+  - name: stg_transaction
+    description: "Transactions made by Sumup devices"
+    columns:
+      - name: id
+        data_type: integer
+        description: "Transaction ID which uniquely identifies the transaction"
+        tests:
+          - unique
+          - not_null
+
+      - name: device_id
+        data_type: integer
+        description: "Device ID that captured the transaction"
+
+      - name: product_name
+        data_type: text
+        description: "Product name that was sold in the transaction"
+
+      - name: product_sku
+        data_type: text
+        description: "Product SKU that was sold in the transaction"
+
+      - name: category_name
+        data_type: text
+        description: "Category of the product sold"
+
+      - name: amount
+        data_type: integer
+        description: "Transaction amount"
+
+      - name: status
+        data_type: text
+        description: "The status of the transaction (accepted/refused/cancelled)"
+
+      - name: card_number
+        data_type: text
+        description: "The card namber the transaction was made by -- should be hashed"
+
+      - name: cvv
+        data_type: integer
+        description: "The cvv of the card of the transaction"
+
+      - name: transaction_created_at
+        data_type: text
+        description: "The transacion creation day"
+
+      - name: transaction_happened_at
+        data_type: text
+        description: ""
