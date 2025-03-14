@@ -11,7 +11,7 @@
 
 select
   id as device_id
-  , type
+  , type as device_type
   , store_id
 from {{ source('sumup', 'device') }}
 

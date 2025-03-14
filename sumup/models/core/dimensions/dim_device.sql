@@ -4,7 +4,7 @@
           , dist='device_id',) }}
 
 select
-  id as device_id
-  , type
+  device_id
+  , device_type
   , store_id
-from {{ source('sumup', 'device') }}
+from {{ ref('stg_device') }}
