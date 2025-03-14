@@ -1,0 +1,66 @@
+version: 2
+
+models:
+  - name: dim_product
+    description: ""
+    columns:
+      - name: product_sku
+        data_type: text
+        description: ""
+
+      - name: product_name
+        data_type: text
+        description: ""
+
+      - name: category_name
+        data_type: text
+        description: ""
+  - name: dim_store
+    description: ""
+    columns:
+      - name: store_id
+        data_type: integer
+        description: ""
+
+      - name: store_name
+        data_type: text
+        description: ""
+
+      - name: address
+        data_type: text
+        description: ""
+
+      - name: city
+        data_type: text
+        description: ""
+
+      - name: country
+        data_type: text
+        description: ""
+
+      - name: store_created_at
+        data_type: timestamp with time zone
+        description: ""
+
+      - name: typology
+        data_type: text
+        description: ""
+
+      - name: customer_id
+        data_type: integer
+        description: ""
+        
+  - name: dim_transaction
+    description: ""
+    columns:
+      - name: transaction_id
+        data_type: integer
+        description: ""
+
+      - name: device_id
+        data_type: integer
+        description: ""
+
+      - name: product_sku
+        data_type: text
+        description: ""

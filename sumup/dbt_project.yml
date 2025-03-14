@@ -1,5 +1,5 @@
 name: 'sumup'
-version: '1.0.0'
+version: '1.9.0'
 
 profile: 'sumup'
 model-paths: ["models"]
@@ -21,8 +21,8 @@ models:
     # Config indicated by + and applies to all files under models/example/
     staging:
       schema: staging
-#    core:
-#      schema: core
+    core:
+      schema: core
 
   post-hook:
     - "GRANT SELECT ON {{ this }} TO postgres"

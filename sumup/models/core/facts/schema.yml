@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: fct_transactions
+    description: ""
+    columns:
+      - name: transaction_id
+        data_type: integer
+        description: ""
+
+      - name: amount
+        data_type: integer
+        description: ""
+
+      - name: status
+        data_type: text
+        description: ""
