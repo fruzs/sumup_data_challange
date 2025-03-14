@@ -1,15 +1,18 @@
-Welcome to your new dbt project!
+# Sumup data challange #
 
-### Using the starter project
+## Setup Steps: ##
+Following dbt recommendation:
+1, set up a virtual environment: `python -m venv dbt-env`
+2, activeate the environment with `source dbt-env/bin/activate - activate the end`
+3, run dbt installation with postgres: `pip install dbt-postgres`
+4, run `dbt init` to initialize the project 
+5, connecting with local db with setting up connection in `.dbt/profiles.yml`
 
-Try running the following commands:
-- dbt run
-- dbt test
 
+# Questions to answer #
+● Top 10 stores per transacted amount --> fct_transaction
+● Top 10 products sold --> fct_transaction
+● Average transacted amount per store typology and country --> fct_transaction
+● Percentage of transactions per device type --> fct_transaction
+● Average time for a store to perform its 5 first transactions  --> fct_transaction
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices

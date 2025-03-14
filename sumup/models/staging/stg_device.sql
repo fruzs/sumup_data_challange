@@ -10,7 +10,7 @@
           , dist='device_id',) }}
 
 select
-  id AS device_id
+  id as device_id
   , type
   , store_id
 from {{ source('sumup', 'device') }}

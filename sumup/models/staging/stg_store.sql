@@ -2,8 +2,8 @@
           , unique_key='store_id') }}
 
 select
-  id AS store_id
-  , name AS store_name
+  id as store_id
+  , name as store_name
   , address
   , city
   , country
