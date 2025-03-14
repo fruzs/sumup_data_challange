@@ -6,12 +6,21 @@ models:
     columns:
       - name: transaction_id
         data_type: integer
-        description: ""
+        description: "Transaction ID which uniquely identifies the transaction"
+        tests:
+          - not_null
+          - unique
 
       - name: amount
         data_type: integer
-        description: ""
+        description: "Transaction amount"
+        tests:
+          - not_null
 
       - name: status
         data_type: text
-        description: ""
+        description: "The status of the transaction (accepted/refused/cancelled)"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['accepted','cancelled','refused']

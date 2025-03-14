@@ -2,65 +2,101 @@ version: 2
 
 models:
   - name: dim_product
-    description: ""
+    description: "Products and their properties"
     columns:
       - name: product_sku
         data_type: text
-        description: ""
+        description: "Product SKU that was sold in the transaction"
+        tests:
+          - not_null
 
       - name: product_name
         data_type: text
-        description: ""
+        description: "Product name that was sold in the transaction"
+        tests:
+          - not_null
 
       - name: category_name
         data_type: text
-        description: ""
+        description: "Category of the product sold"
+        tests:
+          - not_null
+          
   - name: dim_store
-    description: ""
+    description: "Stores and their properties"
     columns:
       - name: store_id
         data_type: integer
-        description: ""
+        description: "Store ID numerical"
+        tests:
+          - not_null
+          - unique
 
       - name: store_name
         data_type: text
-        description: ""
+        description: "Name of the store"
+        tests:
+          - not_null
 
       - name: address
         data_type: text
-        description: ""
+        description: "Address (Street and House Nr) of the store"
+        tests:
+          - not_null
 
       - name: city
         data_type: text
-        description: ""
+        description: "City where the store is located"
+        tests:
+          - not_null
 
       - name: country
         data_type: text
-        description: ""
+        description: "Country where the store is located"
+        tests:
+          - not_null
 
       - name: store_created_at
         data_type: timestamp with time zone
-        description: ""
+        description: "Store creation timestamp in Sumups systems"
+        tests:
+          - not_null
 
       - name: typology
         data_type: text
-        description: ""
+        description: "The type of business the store runs (Eg Hotel, Beuaty, Restaurant, etc.)"
+        tests:
+          - not_null
 
       - name: customer_id
         data_type: integer
-        description: ""
+        description: "Sumup Customer Id that the store belongs to"
+        tests:
+          - not_null
         
   - name: dim_transaction
-    description: ""
+    description: "Transactions and their properties"
     columns:
       - name: transaction_id
         data_type: integer
-        description: ""
+        description: "Transaction ID which uniquely identifies the transaction"
+        tests:
+          - not_null
+          - unique
 
       - name: device_id
         data_type: integer
-        description: ""
+        description: "Device ID that captured the transaction"
+        tests:
+          - not_null
 
       - name: product_sku
+        data_type: text
+        description: "Product SKU that was sold in the transaction"
+        tests:
+          - not_null
+
+
+      - name: category_name
         data_type: text
         description: ""
