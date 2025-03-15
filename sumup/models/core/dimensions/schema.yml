@@ -74,29 +74,14 @@ models:
         tests:
           - not_null
         
-  - name: dim_transaction
-    description: "Transactions and their properties"
+  - name: dim_customer
+    description: "Customer and their properties"
     columns:
-      - name: transaction_id
+      - name: customer_id
         data_type: integer
-        description: "Transaction ID which uniquely identifies the transaction"
+        description: "Sumup Customer Id that the store belongs to"
         tests:
           - not_null
           - unique
 
-      - name: device_id
-        data_type: integer
-        description: "Device ID that captured the transaction"
-        tests:
-          - not_null
-
-      - name: product_sku
-        data_type: text
-        description: "Product SKU that was sold in the transaction"
-        tests:
-          - not_null
-
-
-      - name: category_name
-        data_type: text
-        description: ""
+ 

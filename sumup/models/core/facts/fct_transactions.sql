@@ -1,8 +1,11 @@
 {{ config(materialized='incremental'
           , unique_key='transaction_id') }}
 
+with transactions as (
 select
     transaction_id
+    , device_id
+    , product_id
     , amount
     , status
     , transaction_created_at
@@ -20,3 +23,31 @@ where transaction_created_at
      limit 1)
 
 {% endif %}
+)
+, devices as (
+  select 
+    device_id
+    , store_id
+  from {{ref('stg_device')}}
+)
+, stores as (
+  select 
+    store_id
+    , customer_id
+  from {{ref('stg_store')}}
+)
+
+
+--- joining devices to get store id and store to get customer id
+select 
+    transactions.transaction_id
+    , transactions.device_id
+    , transactions.product_id
+    , transactions.amount
+    , transactions.status
+    , transactions.transaction_created_at
+    , stores.store_id
+    , stores.customer_id
+from transactions 
+left join devices on devices.device_id = transactions.device_id
+left join stores on stores.store_id=devices.store_id
