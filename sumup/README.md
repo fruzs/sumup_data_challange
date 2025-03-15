@@ -45,73 +45,77 @@ I saved the queries in the analysis folder.
 <img width="445" alt="Screen Shot 2025-03-15 at 11 39 08 PM" src="https://github.com/user-attachments/assets/c2cb982b-c7af-4600-86ad-ea63df7b53b0" />
 
 3. Average transacted amount per store typology and country
-Beauty	Austria	584.7500000000000000
-Beauty	Brazil	435.0000000000000000
-Beauty	Ireland	558.0000000000000000
-Beauty	Italy	452.5000000000000000
-Beauty	Netherlands	373.6666666666666667
-Beauty	New Zealand	542.6666666666666667
-Beauty	Nigeria	442.3846153846153846
-Beauty	Norway	733.0000000000000000
-Beauty	South Africa	517.0769230769230769
-Beauty	Vietnam	961.0000000000000000
-Florist	Australia	372.1428571428571429
-Florist	Austria	651.6666666666666667
-Florist	Belgium	322.6666666666666667
-Florist	Brazil	534.6842105263157895
-Florist	China	522.0000000000000000
-Florist	France	583.2500000000000000
-Florist	Indonesia	380.8461538461538462
-Florist	Singapore	456.8571428571428571
-Florist	South Korea	578.5000000000000000
-FoodTruck	Australia	594.6000000000000000
-FoodTruck	Austria	422.0000000000000000
-FoodTruck	Costa Rica	469.1500000000000000
-FoodTruck	France	400.0400000000000000
-FoodTruck	India	700.5000000000000000
-FoodTruck	Nigeria	278.5000000000000000
-FoodTruck	Ukraine	513.2857142857142857
-FoodTruck	United Kingdom	270.0000000000000000
-Hotel	Canada	350.0666666666666667
-Hotel	China	515.8571428571428571
-Hotel	Costa Rica	605.6000000000000000
-Hotel	Ireland	558.4545454545454545
-Hotel	Italy	872.0000000000000000
-Hotel	Netherlands	672.1666666666666667
-Hotel	New Zealand	613.2000000000000000
-Hotel	United States	696.0000000000000000
-Other	Germany	515.6111111111111111
-Other	India	822.0000000000000000
-Other	Indonesia	547.0000000000000000
-Other	Peru	749.0000000000000000
-Other	Singapore	282.0000000000000000
-Other	Spain	442.6666666666666667
-Press	Belgium	476.1111111111111111
-Press	Brazil	571.0833333333333333
-Press	Chile	101.0000000000000000
-Press	Mexico	534.2000000000000000
-Press	Netherlands	554.0952380952380952
-Press	Peru	425.9090909090909091
-Press	Poland	392.5000000000000000
-Press	United Kingdom	399.5000000000000000
-Restaurant	Austria	653.0000000000000000
-Restaurant	Colombia	671.5000000000000000
-Restaurant	India	540.3333333333333333
-Restaurant	Ireland	136.0000000000000000
-Restaurant	Netherlands	423.2857142857142857
-Restaurant	Nigeria	610.8000000000000000
-Restaurant	South Korea	222.0000000000000000
-Restaurant	Sweden	413.5714285714285714
-Service	Australia	375.0000000000000000
-Service	Belgium	601.5000000000000000
-Service	Brazil	894.5000000000000000
-Service	Germany	346.0000000000000000
-Service	India	477.5000000000000000
-Service	Mexico	602.0000000000000000
-Service	Singapore	443.3333333333333333
-Service	South Africa	614.6666666666666667
-Service	Ukraine	387.2000000000000000
-Service	United Kingdom	563.3750000000000000
+
+| Typology   | Country        | Avg. Transacted Amount | 
+|------------|----------------|------------------------| 
+| Beauty     | Austria        | 584.7500000000000000   | 
+| Beauty     | Brazil         | 435.0000000000000000   | 
+| Beauty     | Ireland        | 558.0000000000000000   | 
+| Beauty     | Italy          | 452.5000000000000000   | 
+| Beauty     | Netherlands    | 373.6666666666666667   | 
+| Beauty     | New Zealand    | 542.6666666666666667   | 
+| Beauty     | Nigeria        | 442.3846153846153846   | 
+| Beauty     | Norway         | 733.0000000000000000   | 
+| Beauty     | South Africa   | 517.0769230769230769   | 
+| Beauty     | Vietnam        | 961.0000000000000000   | 
+| Florist    | Australia      | 372.1428571428571429   | 
+| Florist    | Austria        | 651.6666666666666667   | 
+| Florist    | Belgium        | 322.6666666666666667   | 
+| Florist    | Brazil         | 534.6842105263157895   | 
+| Florist    | China          | 522.0000000000000000   | 
+| Florist    | France         | 583.2500000000000000   | 
+| Florist    | Indonesia      | 380.8461538461538462   | 
+| Florist    | Singapore      | 456.8571428571428571   | 
+| Florist    | South Korea    | 578.5000000000000000   | 
+| FoodTruck  | Australia      | 594.6000000000000000   | 
+| FoodTruck  | Austria        | 422.0000000000000000   | 
+| FoodTruck  | Costa Rica     | 469.1500000000000000   | 
+| FoodTruck  | France         | 400.0400000000000000   | 
+| FoodTruck  | India          | 700.5000000000000000   | 
+| FoodTruck  | Nigeria        | 278.5000000000000000   | 
+| FoodTruck  | Ukraine        | 513.2857142857142857   | 
+| FoodTruck  | United Kingdom | 270.0000000000000000   | 
+| Hotel      | Canada         | 350.0666666666666667   | 
+| Hotel      | China          | 515.8571428571428571   | 
+| Hotel      | Costa Rica     | 605.6000000000000000   | 
+| Hotel      | Ireland        | 558.4545454545454545   | 
+| Hotel      | Italy          | 872.0000000000000000   | 
+| Hotel      | Netherlands    | 672.1666666666666667   | 
+| Hotel      | New Zealand    | 613.2000000000000000   | 
+| Hotel      | United States  | 696.0000000000000000   | 
+| Other      | Germany        | 515.6111111111111111   | 
+| Other      | India          | 822.0000000000000000   | 
+| Other      | Indonesia      | 547.0000000000000000   | 
+| Other      | Peru           | 749.0000000000000000   | 
+| Other      | Singapore      | 282.0000000000000000   | 
+| Other      | Spain          | 442.6666666666666667   | 
+| Press      | Belgium        | 476.1111111111111111   | 
+| Press      | Brazil         | 571.0833333333333333   | 
+| Press      | Chile          | 101.0000000000000000   | 
+| Press      | Mexico         | 534.2000000000000000   | 
+| Press      | Netherlands    | 554.0952380952380952   | 
+| Press      | Peru           | 425.9090909090909091   | 
+| Press      | Poland         | 392.5000000000000000   | 
+| Press      | United Kingdom | 399.5000000000000000   | 
+| Restaurant | Austria        | 653.0000000000000000   | 
+| Restaurant | Colombia       | 671.5000000000000000   | 
+| Restaurant | India          | 540.3333333333333333   | 
+| Restaurant | Ireland        | 136.0000000000000000   | 
+| Restaurant | Netherlands    | 423.2857142857142857   | 
+| Restaurant | Nigeria        | 610.8000000000000000   | 
+| Restaurant | South Korea    | 222.0000000000000000   | 
+| Restaurant | Sweden         | 413.5714285714285714   | 
+| Service    | Australia      | 375.0000000000000000   | 
+| Service    | Belgium        | 601.5000000000000000   | 
+| Service    | Brazil         | 894.5000000000000000   | 
+| Service    | Germany        | 346.0000000000000000   | 
+| Service    | India          | 477.5000000000000000   | 
+| Service    | Mexico         | 602.0000000000000000   | 
+| Service    | Singapore      | 443.3333333333333333   | 
+| Service    | South Africa   | 614.6666666666666667   | 
+| Service    | Ukraine        | 387.2000000000000000   | 
+| Service    | United Kingdom | 563.3750000000000000   | 
+
 
 4. Percentage of transactions per device type
 <img width="635" alt="Screen Shot 2025-03-15 at 11 42 34 PM" src="https://github.com/user-attachments/assets/e23bc9e4-2f56-4c8a-b2af-f50faedd6284" />
