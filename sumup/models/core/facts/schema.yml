@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: fct_transactions
-    description: ""
+    description: "Transacton informations table"
     columns:
       - name: transaction_id
         data_type: integer
@@ -34,5 +34,17 @@ models:
       - name: product_id
         data_type: text
         description: "Product id that was sold in the transaction"
+        tests:
+          - not_null
+          
+      - name: store_id
+        data_type: integer
+        description: "Store ID numerical"
+        tests:
+          - not_null
+      
+      - name: customer_id
+        data_type: integer
+        description: "Customer ID numerical"
         tests:
           - not_null

@@ -83,5 +83,28 @@ models:
         tests:
           - not_null
           - unique
+  
+  - name: dim_device
+    description: "Sumup devices and their properties"
+    columns:
+      - name: device_id
+        data_type: integer
+        description: "Sumup hardware unique device ID to perform transaction - primary key"
+        tests:
+          - unique
+          - not_null
+
+      - name: device_type
+        data_type: integer
+        description: "Device Type numerical"
+        tests:
+          - not_null
+
+      - name: store_id
+        data_type: integer
+        description: "Store ID numerical"
+        tests:
+          - not_null
+
 
  

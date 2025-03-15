@@ -1,0 +1,76 @@
+version: 2
+
+models:
+  - name: mart_valid_transactions
+    description: "table that contains information of valid transactions, the products sold and the stores it was sold at"
+    columns:
+      - name: transaction_id
+        data_type: integer
+        description: "Transaction ID which uniquely identifies the transaction"
+        tests:
+          - not_null
+          - unique
+
+      - name: amount
+        data_type: integer
+        description: "Transaction amount"
+        tests:
+          - not_null
+
+      - name: status
+        data_type: text
+        description: "The status of the transaction (accepted/refused/cancelled)"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['accepted','cancelled','refused']
+
+
+      - name: product_sku
+        data_type: text
+        description: "Product SKU that was sold in the transaction"
+        tests:
+          - not_null
+
+      - name: product_name
+        data_type: text
+        description: "Product name that was sold in the transaction"
+        tests:
+          - not_null
+
+      - name: device_id
+        data_type: integer
+        description: "Device ID that captured the transaction"
+        tests:
+          - not_null
+
+      - name: device_type
+        data_type: integer
+        description: "Device Type numerical"
+        tests:
+          - not_null
+      
+      - name: store_id
+        data_type: integer
+        description: "Store ID numerical"
+        tests:
+          - not_null
+
+      - name: country
+        data_type: text
+        description: "Country where the store is located"
+        tests:
+          - not_null
+
+      - name: store_created_at
+        data_type: timestamp with time zone
+        description: "Store creation timestamp in Sumups systems"
+        tests:
+          - not_null
+
+      - name: typology
+        data_type: text
+        description: "The type of business the store runs (Eg Hotel, Beuaty, Restaurant, etc.)"
+        tests:
+          - not_null
+      
