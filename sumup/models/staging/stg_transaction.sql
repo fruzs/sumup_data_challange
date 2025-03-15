@@ -4,6 +4,7 @@
 select
   id as transaction_id
   , device_id
+  , {{ dbt_utils.generate_surrogate_key(['product_sku']) }} as product_id
   , product_sku
   , product_name
   , category_name
