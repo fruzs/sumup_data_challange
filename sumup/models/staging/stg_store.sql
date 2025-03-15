@@ -1,5 +1,4 @@
-{{ config(materialized='incremental'
-          , unique_key='store_id') }}
+{{ config(materialized='view') }}
 
 select
   id as store_id
