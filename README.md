@@ -127,5 +127,6 @@ It would be interesting to look into the distribution of not accepted transactio
 
 ## Area for further improving the dbt project ##
 1. Adding primary key / foreign key constraints
-2. utilzing dbt_util tests, eg.: relationships_where, unique combination of values.
+2. Utilzing dbt_util tests, eg.: relationships_where, unique combination of values.
+3. Adding currency and exchange rates.
 
