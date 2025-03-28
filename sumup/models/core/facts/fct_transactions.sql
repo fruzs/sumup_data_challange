@@ -1,5 +1,6 @@
 {{ config(materialized='incremental'
-          , unique_key='transaction_id') }}
+          , unique_key='transaction_id'
+          , merge_update_columns = ['status']) }}
 
 with transactions as (
 select

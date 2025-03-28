@@ -2,7 +2,8 @@
 which is that their status is accepted
 */
 {{ config(materialized='incremental'
-          , unique_key='transaction_id') }}
+          , unique_key='transaction_id') 
+          , merge_update_columns = ['status']}}
 
 with valid_transactions as (
     select
